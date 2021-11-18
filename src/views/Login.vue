@@ -7,7 +7,7 @@
             <input type="email" id="fname" v-model="user.email"><br>
             <label for="lname">Password:</label><br>
             <input type="password" id="lname" v-model="user.password" name="lname"><br>
-            <input type="submit" value="Submit">
+            <input class="w3-red" type="submit" value="Submit">
         </form> 
     </div>
 </template>

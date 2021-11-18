@@ -29,7 +29,7 @@ export default new Vuex.Store({
     },
     setLogin(state, payload) {
       state.isLogin = payload;
-    }
+    },
   },
   actions: {
     getItems(context) {
@@ -96,7 +96,6 @@ export default new Vuex.Store({
         data: payload
       })
       .then(({data}) => {
-        // console.log(data, '<<province');
         localStorage.setItem('token', data);
         context.commit('setLogin', true);
         router.push({ path: '/' });
@@ -104,6 +103,11 @@ export default new Vuex.Store({
       .catch((err) => {
         console.log(err, '<<error');
       })
+    },
+    logout(context) {
+      this.isLogin = false;
+      localStorage.clear();
+      router.push({ path: '/' });
     }
   },
   modules: {

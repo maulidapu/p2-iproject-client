@@ -10,12 +10,12 @@
         </div>
         <h1><b class="w3-text-red">ignore the red flags, embrace the heartache to come if not worse</b></h1>
         <div class="w3-section w3-bottombar w3-padding-16">
-          <button v-if="this.$store.state.isLogin" class="w3-button w3-red" style="margin-left:450px">Post your redFlag NOW!</button>
-          <form class="w3-main" style="margin-left:800px">
+          <button v-if="this.$store.state.isLogin" class="w3-button w3-red" style="width:60%; margin-left:40px">Post your redFlag NOW!</button>
+          <!-- <form class="w3-main" style="margin-left:800px">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success w3-button w3-red" type="submit">Search</button>
-          </form>
-          <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-phone fa-3x w3-margin-right"></i>EMERGENCY CALL</a>
+          </form> -->
+          <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-phone fa-3x w3-margin-left"></i>EMERGENCY CALL</a> -->
         </div>
       </header>
 
@@ -26,12 +26,12 @@
           <div class="w3-container w3-white">
             <div class="bg-white">
               <div class="w3-center w3-padding-32">
-                  <button class="w3-button w3-red w3-hover-grey" @click.prevent="playSound(e.description)"><i class="fa fa-commenting-o"></i><span class="ml-1"> Voice</span></button>
+                  <button class="w3-button w3-red w3-hover-grey" @click.prevent="playSound(e.description)"><i class="fa fa-volume-up"></i><span class="ml-1"> Voice</span></button>
                   <button class="w3-button w3-red w3-hover-grey">
                   <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false">Tweet</a>
                   <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
                   </button>
-                  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-instagram fa-3x"></i></a>
+                  <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-instagram fa-3x"></i></a> -->
               </div>
             </div>
             <p><b>{{ e.name }}</b></p>
